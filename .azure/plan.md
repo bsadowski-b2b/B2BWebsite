@@ -1,6 +1,6 @@
 # Azure Static Web Apps Deployment Plan
 
-Status: Proposed
+Status: Ready for Validation
 
 ## Goal
 
@@ -30,14 +30,18 @@ Use GitHub-backed Azure Static Web Apps deployment as the primary path.
 
 This matches the current project because the deployable files already live at the project root.
 
-## Files To Add After Approval
+## Files Added
 
 - `staticwebapp.config.json`
-  - Add static-site headers and clean fallback behavior.
+  - Adds static-site headers and clean fallback behavior.
 - `.github/workflows/azure-static-web-apps.yml`
-  - Optional if Azure Portal does not generate the workflow automatically.
-- README deployment section
-  - Document the exact Azure Portal and CLI steps.
+  - Provides a reusable GitHub Actions deployment workflow.
+- `README.md`
+  - Documents the Azure Portal, GitHub Actions, SWA CLI, and package steps.
+- `package.json`
+  - Adds `npm run package:azure`.
+- `.gitignore`
+  - Excludes generated deployment packages in `dist/`.
 
 ## Manual Package Option
 
@@ -64,3 +68,4 @@ The zip should exclude:
 - Confirm Azure deployment settings point to app location `/`.
 - Confirm no build output folder is configured for this plain static site.
 - Confirm all images and CSS load from relative paths.
+- Confirm the Azure package command creates `dist/btobvisions-static-site.zip`.
