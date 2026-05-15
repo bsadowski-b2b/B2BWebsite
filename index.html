@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B to B Visions | Sage 100 EDI, Shipping, and Integration</title>
+    <meta
+      name="description"
+      content="B to B Visions helps Sage 100 users automate EDI, shipping, trading partner compliance, warehouse integration, barcoding, and custom workflows."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/brand/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/brand/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="B to B Visions home">
+        <img class="brand-logo" src="assets/brand/btobvisions-logo.png" alt="" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#solutions">Solutions</a>
+        <a href="#products">Products</a>
+        <a href="#trading-partners">Partners</a>
+        <a href="#company">Company</a>
+        <a href="#support">Support</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Talk to sales</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Sage 100 EDI, shipping, and partner compliance</p>
+          <h1>
+            <span>Keep Sage 100</span>
+            <span>connected to</span>
+            <span>every trading</span>
+            <span>partner.</span>
+          </h1>
+          <p class="lead">
+            Automate orders, invoices, ASNs, labels, warehouse transactions, and shipping workflows
+            with tools built around Sage 100 and supported by experienced implementers.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#contact">Contact sales</a>
+            <a class="button secondary" href="#products">View products</a>
+          </div>
+          <ul class="check-list" aria-label="Highlights">
+            <li>Trading partner compliance, maps, and document flow</li>
+            <li>Certified Sage Master Developer since 1991</li>
+            <li>EDI, shipping, warehouse, and custom workflow support</li>
+          </ul>
+        </div>
+
+        <div class="product-preview" aria-label="Solution preview">
+          <div class="preview-topbar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="prompt-row">
+            <p>Trying to meet a retailer, marketplace, or 3PL requirement?</p>
+            <button type="button" aria-label="Submit example prompt">-></button>
+          </div>
+          <div class="answer-card">
+            <div class="avatar">
+              <img src="assets/brand/btobvisions-mark.png" alt="" />
+            </div>
+            <div>
+              <p class="answer-title">Practical Sage 100 automation</p>
+              <p>
+                B to B-Link moves EDI documents through Sage 100, Ship-Link handles shipment execution
+                and labels, and B to B Visions adapts workflows around each partner's rules.
+              </p>
+            </div>
+          </div>
+          <div class="source-grid">
+            <span>EDI Compliance</span>
+            <span>Shipping + Labels</span>
+            <span>Partner Workflows</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust section compact">
+        <p>Built for Sage 100 teams in</p>
+        <div class="logo-row" aria-label="Industries served">
+          <span>Manufacturing</span>
+          <span>Distribution</span>
+          <span>Importing / Exporting</span>
+          <span>Grocery</span>
+          <span>Healthcare</span>
+          <span>Government</span>
+        </div>
+      </section>
+
+      <section class="section trading-partners" id="trading-partners">
+        <div class="section-heading">
+          <p class="eyebrow">Trading partners</p>
+          <h2>Connect Sage 100 to the trading partners that drive your orders.</h2>
+          <p>
+            Browse common retail, grocery, pharmacy, marketplace, and distribution relationships for
+            EDI documents, labels, shipping notices, and warehouse-ready transaction flows.
+          </p>
+        </div>
+
+        <div class="partner-filter" aria-label="Filter trading partners">
+          <button type="button" class="is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="retail" aria-pressed="false">Retail</button>
+          <button type="button" data-filter="grocery" aria-pressed="false">Grocery</button>
+          <button type="button" data-filter="pharmacy" aria-pressed="false">Pharmacy</button>
+          <button type="button" data-filter="marketplace" aria-pressed="false">Marketplace</button>
+          <button type="button" data-filter="home-improvement" aria-pressed="false">Home improvement</button>
+        </div>
+
+        <div class="partner-showcase">
+          <div class="partner-grid" aria-label="Popular trading partners">
+            <button
+              type="button"
+              class="partner-card is-selected"
+              data-category="retail grocery"
+              data-name="Walmart"
+              data-documents="Purchase orders, invoices, ASNs, shipping labels"
+            >
+              <img src="assets/trading-partners/walmart.png" alt="Walmart logo" loading="lazy" />
+              <span>Walmart</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="retail home-improvement"
+              data-name="Home Depot"
+              data-documents="Purchase orders, invoices, routing, labels"
+            >
+              <img src="assets/trading-partners/home-depot.png" alt="Home Depot logo" loading="lazy" />
+              <span>Home Depot</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="retail marketplace"
+              data-name="Amazon"
+              data-documents="Marketplace orders, invoices, shipment notices"
+            >
+              <img src="assets/trading-partners/amazon.png" alt="Amazon logo" loading="lazy" />
+              <span>Amazon</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="retail home-improvement"
+              data-name="Lowe's"
+              data-documents="Purchase orders, invoices, ASNs, carton labels"
+            >
+              <img src="assets/trading-partners/lowes.png" alt="Lowe's logo" loading="lazy" />
+              <span>Lowe's</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="retail grocery"
+              data-name="Costco"
+              data-documents="Warehouse orders, invoices, ASNs, UCC-128 labels"
+            >
+              <img src="assets/trading-partners/costco.png" alt="Costco logo" loading="lazy" />
+              <span>Costco</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="grocery retail"
+              data-name="Kroger"
+              data-documents="Grocery EDI, invoices, shipping notices, labels"
+            >
+              <img src="assets/trading-partners/kroger.png" alt="Kroger logo" loading="lazy" />
+              <span>Kroger</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="grocery"
+              data-name="ALDI"
+              data-documents="Purchase orders, invoices, warehouse documents"
+            >
+              <img src="assets/trading-partners/aldi.png" alt="ALDI logo" loading="lazy" />
+              <span>ALDI</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="pharmacy retail"
+              data-name="Walgreens"
+              data-documents="Retail pharmacy EDI, invoices, ASNs"
+            >
+              <img src="assets/trading-partners/walgreens.png" alt="Walgreens logo" loading="lazy" />
+              <span>Walgreens</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="pharmacy retail"
+              data-name="CVS"
+              data-documents="Retail pharmacy orders, invoices, shipment notices"
+            >
+              <img src="assets/trading-partners/cvs.png" alt="CVS logo" loading="lazy" />
+              <span>CVS</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="retail"
+              data-name="Kohl's"
+              data-documents="Retail orders, invoices, labels, shipment notices"
+            >
+              <img src="assets/trading-partners/kohls.png" alt="Kohl's logo" loading="lazy" />
+              <span>Kohl's</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="retail grocery"
+              data-name="Target"
+              data-documents="Purchase orders, invoices, ASNs, labels"
+            >
+              <img src="assets/trading-partners/target.png" alt="Target logo" loading="lazy" />
+              <span>Target</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="grocery retail"
+              data-name="Albertsons"
+              data-documents="Grocery EDI, warehouse notices, invoices"
+            >
+              <img src="assets/trading-partners/albertsons.png" alt="Albertsons logo" loading="lazy" />
+              <span>Albertsons</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="retail"
+              data-name="Best Buy"
+              data-documents="Retail orders, invoices, ASNs, shipping labels"
+            >
+              <img src="assets/trading-partners/best-buy.png" alt="Best Buy logo" loading="lazy" />
+              <span>Best Buy</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="grocery"
+              data-name="Publix"
+              data-documents="Grocery orders, invoices, shipment notices"
+            >
+              <img src="assets/trading-partners/publix.png" alt="Publix logo" loading="lazy" />
+              <span>Publix</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="retail"
+              data-name="Bed Bath & Beyond"
+              data-documents="Retail orders, invoices, labels, shipment notices"
+            >
+              <img
+                src="assets/trading-partners/bed-bath-beyond.png"
+                alt="Bed Bath & Beyond logo"
+                loading="lazy"
+              />
+              <span>Bed Bath & Beyond</span>
+            </button>
+            <button
+              type="button"
+              class="partner-card"
+              data-category="grocery retail"
+              data-name="Tesco"
+              data-documents="Grocery EDI, invoices, warehouse documents"
+            >
+              <img src="assets/trading-partners/tesco.png" alt="Tesco logo" loading="lazy" />
+              <span>Tesco</span>
+            </button>
+          </div>
+
+          <aside class="partner-detail" aria-live="polite">
+            <p class="eyebrow">Selected partner</p>
+            <h3 id="partner-detail-name">Walmart</h3>
+            <p id="partner-detail-copy">
+              Build a Sage 100 workflow for Walmart requirements, including purchase orders, invoices,
+              ASNs, shipping labels, plus exception handling.
+            </p>
+            <a class="button secondary" href="#contact">Discuss this partner</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="solutions">
+        <div class="section-heading">
+          <p class="eyebrow">Solutions</p>
+          <h2>Sage 100 integration help for teams that need EDI to work in production.</h2>
+          <p>
+            B to B Visions helps companies automate trading partner documents, reduce rekeying, support
+            warehouse and shipping requirements, and keep Sage 100 at the center of the process.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="icon">01</span>
+            <h3>Trading partner EDI</h3>
+            <p>
+              Map purchase orders, invoices, ASNs, acknowledgments, and labels around each customer's
+              requirements.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="icon">02</span>
+            <h3>Sage 100 automation</h3>
+            <p>
+              Reduce manual entry by moving order-to-cash and procure-to-pay data directly through
+              Sage 100 workflows.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="icon">03</span>
+            <h3>Warehouse and 3PL integrations</h3>
+            <p>
+              Connect third-party warehouses using EDI, CSV, XML, fixed-width files, and other practical
+              data exchanges.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="icon">04</span>
+            <h3>Shipping and barcoding</h3>
+            <p>
+              Generate UCC-128, GS1-128, UPC, carton, and inventory labels from the same Sage 100 process.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">How B to B-Link works</p>
+          <h2>Integrated EDI that reduces rekeying and exception work.</h2>
+          <p>
+            B to B-Link exists as an add-on module inside Sage 100, so documents can move through
+            familiar workflows with validation, history, scheduling, and secure AS2 communications.
+          </p>
+        </div>
+        <ol class="steps">
+          <li>
+            <strong>Receive and validate documents</strong>
+            <span>Bring partner requirements into a controlled workflow before transactions reach Sage 100.</span>
+          </li>
+          <li>
+            <strong>Process inside Sage 100</strong>
+            <span>Turn orders, invoices, ASNs, and acknowledgments into usable business transactions.</span>
+          </li>
+          <li>
+            <strong>Ship, label, and report</strong>
+            <span>Use logs, audit trails, error trapping, validation, scheduling, and filtering tools.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="products">
+        <div class="section-heading">
+          <p class="eyebrow">Products</p>
+          <h2>Modules for EDI, fulfillment, labels, and custom Sage 100 workflows.</h2>
+        </div>
+        <div class="solution-grid">
+          <article>
+            <h3>B to B-Link</h3>
+            <p>
+              A Sage 100 integration suite for EDI, XML, HTML, SQL, ODBC, warehouse, WMS, POS,
+              freight carrier, CSV, fixed-width, and SAP iDoc integrations.
+            </p>
+            <a href="#contact">Ask about B to B-Link</a>
+          </article>
+          <article>
+            <h3>Ship-Link</h3>
+            <p>
+              A shipping module for shipment entry, bills of lading, UCC-128 labels, bar-coded item
+              labels, ASN generation, and optional carrier integrations.
+            </p>
+            <a href="#contact">Ask about Ship-Link</a>
+          </article>
+          <article>
+            <h3>Custom integrations</h3>
+            <p>
+              Extend Sage 100 around partner rules, third-party warehouses, custom websites, SQL
+              databases, and other business systems.
+            </p>
+            <a href="#contact">Discuss a project</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stats" id="company">
+        <div>
+          <span>1989</span>
+          <p>Year B to B Visions was formed</p>
+        </div>
+        <div>
+          <span>1991</span>
+          <p>Certified Sage Master Developer since</p>
+        </div>
+        <div>
+          <span>1000s</span>
+          <p>Projects implemented for clients</p>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="section-heading">
+          <p class="eyebrow">Customer proof</p>
+          <h2>Trusted by teams running high-volume EDI, shipping, and fulfillment operations.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure>
+            <blockquote>
+              "B to B Visions and their software were a critical part of operations during a period of enormous growth."
+            </blockquote>
+            <figcaption>Director of IT, Glaceau makers of Vitamin Water</figcaption>
+          </figure>
+          <figure>
+            <blockquote>
+              "Not in my wildest dreams could I have imagined the productivity and cost savings that Better Sleep would gain."
+            </blockquote>
+            <figcaption>William Emery, President, Better Sleep Inc.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section pricing" id="support">
+        <div class="section-heading">
+          <p class="eyebrow">Support</p>
+          <h2>Implementation, partner testing, and support after go-live.</h2>
+          <p>
+            B to B Visions works with end-users, resellers, and trading partners on setup, mapping,
+            testing, workflow changes, and day-to-day production questions.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <article>
+            <p class="plan">Demos</p>
+            <h3>Online</h3>
+            <p>Review EDI, shipping, and integration workflows before choosing an implementation path.</p>
+            <a class="button secondary" href="#contact">Request a demo</a>
+          </article>
+          <article class="featured-plan">
+            <p class="plan">Remote support</p>
+            <h3>GoToAssist</h3>
+            <p>Get help from a technician when document flow, maps, labels, or integrations need attention.</p>
+            <a class="button primary" href="#contact">Get support</a>
+          </article>
+          <article>
+            <p class="plan">Resellers</p>
+            <h3>Sage</h3>
+            <p>Authorized Sage resellers can bring B to B Visions into EDI, shipping, and automation projects.</p>
+            <a class="button secondary" href="#contact">Contact us</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq-list">
+        <div class="section-heading">
+          <p class="eyebrow">Company profile</p>
+          <h2>A focused Sage 100 integration partner.</h2>
+        </div>
+        <article class="faq is-open">
+          <button type="button" aria-expanded="true">What does B to B Visions do?</button>
+          <p>
+            B to B Visions helps Sage 100 users automate EDI, shipping, labels, warehouse files, and
+            custom business processes that are difficult to manage manually.
+          </p>
+        </article>
+        <article class="faq">
+          <button type="button" aria-expanded="false">What systems can be connected?</button>
+          <p>
+            Sage 100 can be connected with EDI trading partners, third-party warehouses, WMS and POS
+            systems, freight carriers, SQL databases, custom websites, and other business systems.
+          </p>
+        </article>
+        <article class="faq">
+          <button type="button" aria-expanded="false">What is the goal?</button>
+          <p>
+            The goal is to reduce manual work, prevent avoidable document errors, and give Sage 100
+            users a practical path for meeting customer and warehouse requirements.
+          </p>
+        </article>
+      </section>
+
+      <section class="section cta" id="contact">
+        <p class="eyebrow">Contact B to B Visions</p>
+        <h2>Talk with the team about your Sage 100 integration needs.</h2>
+        <p>
+          Normal operating hours are Monday through Friday, 9:00 A.M. to 6:00 P.M. EST, excluding holidays.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="mailto:Sales@btobvisions.com">Email sales</a>
+          <a class="button secondary" href="tel:+12019959666">Call 1-201-995-9666</a>
+        </div>
+        <p>
+          Toll-Free: 1-877-EDI-Link | Local: 1-201-995-9666 | Fax: 1-201-995-9969
+          <br />
+          41 Orchard Street, Ramsey, NJ 07446
+          <br />
+          Sales@btobvisions.com | Info@btobvisions.com | Support@btobvisions.com
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-contact-panel">
+          <a class="brand" href="#top" aria-label="B to B Visions home">
+            <img class="brand-logo" src="assets/brand/btobvisions-logo.png" alt="" />
+          </a>
+
+          <div class="footer-contact-list" aria-label="Contact details">
+            <div class="footer-contact-item">
+              <img src="assets/footer/phone.svg" alt="" aria-hidden="true" />
+              <div>
+                <span>1-201-995-9666</span>
+                <span>Toll-Free: 1-877-EDI-Link</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <img src="assets/footer/mail.svg" alt="" aria-hidden="true" />
+              <div>
+                <span>Sales@btobvisions.com</span>
+                <span>Support@btobvisions.com</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <img src="assets/footer/location.svg" alt="" aria-hidden="true" />
+              <div>
+                <span>41 Orchard Street</span>
+                <span>Ramsey, NJ 07446</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links-panel">
+          <nav class="footer-link-columns" aria-label="Footer navigation">
+            <div>
+              <p class="footer-column-title">Solutions</p>
+              <a href="#solutions">Trading partner EDI</a>
+              <a href="#solutions">Sage 100 automation</a>
+              <a href="#solutions">Warehouse and 3PL</a>
+              <a href="#solutions">Shipping and barcoding</a>
+            </div>
+            <div>
+              <p class="footer-column-title">Products</p>
+              <a href="#products">B to B-Link</a>
+              <a href="#products">Ship-Link</a>
+              <a href="#products">Custom integrations</a>
+            </div>
+            <div>
+              <p class="footer-column-title">Company</p>
+              <a href="#company">Company profile</a>
+              <a href="#support">Support</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </nav>
+
+          <div class="footer-social" aria-label="Social profiles coming soon">
+            <div class="social-icons">
+              <span class="social-icon" role="img" aria-label="Facebook">
+                <img src="assets/footer/facebook.svg" alt="" aria-hidden="true" />
+              </span>
+              <span class="social-icon" role="img" aria-label="LinkedIn">
+                <img src="assets/footer/linkedin.svg" alt="" aria-hidden="true" />
+              </span>
+              <span class="social-icon" role="img" aria-label="X">
+                <img src="assets/footer/x.svg" alt="" aria-hidden="true" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2026 B to B Visions. All rights reserved.</p>
+        <div class="footer-legal" aria-label="Footer links">
+          <a href="#support">Support</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
