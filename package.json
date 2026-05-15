@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node tools/serve.mjs"
+    "start": "node tools/serve.mjs",
+    "package:azure": "rm -rf dist && mkdir -p dist && zip -r dist/btobvisions-static-site.zip index.html styles.css script.js staticwebapp.config.json assets -x '*.DS_Store'"
   }
 }
