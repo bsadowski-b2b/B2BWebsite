@@ -1,6 +1,6 @@
 # Azure Static Web Apps Deployment Plan
 
-Status: Ready for Validation
+Status: Validated
 
 ## Goal
 
@@ -34,8 +34,8 @@ This matches the current project because the deployable files already live at th
 
 - `staticwebapp.config.json`
   - Adds static-site headers and clean fallback behavior.
-- `.github/workflows/azure-static-web-apps.yml`
-  - Provides a reusable GitHub Actions deployment workflow.
+- `.github/workflows/azure-static-web-apps-wonderful-beach-042aa080f.yml`
+  - Uses the existing Azure-generated GitHub Actions deployment workflow with static-site settings.
 - `README.md`
   - Documents the Azure Portal, GitHub Actions, SWA CLI, and package steps.
 - `package.json`
@@ -69,3 +69,23 @@ The zip should exclude:
 - Confirm no build output folder is configured for this plain static site.
 - Confirm all images and CSS load from relative paths.
 - Confirm the Azure package command creates `dist/btobvisions-static-site.zip`.
+
+## Validation Proof
+
+Commands run successfully on May 15, 2026:
+
+- `node -e "JSON.parse(require('fs').readFileSync('staticwebapp.config.json','utf8')); JSON.parse(require('fs').readFileSync('package.json','utf8')); console.log('json ok')"`
+- `node --check script.js`
+- `node --check tools/serve.mjs`
+- `npm run package:azure`
+- `curl -I http://localhost:4175/`
+- `curl -I http://localhost:4175/staticwebapp.config.json`
+- `curl -I http://localhost:4175/assets/brand/btobvisions-logo.png`
+
+Results:
+
+- JSON config files parsed successfully.
+- JavaScript files passed syntax checks.
+- Azure package created at `dist/btobvisions-static-site.zip`.
+- Local static server returned `200 OK` for the home page, Azure config file, and brand logo asset.
+- Browser check confirmed the page title, hero text, brand images, and 16 trading partner cards load from the current project root.

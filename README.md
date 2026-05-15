@@ -55,14 +55,28 @@ Output location: leave blank
 Skip app build: true
 ```
 
-6. If Azure creates its own workflow file, compare it with `.github/workflows/azure-static-web-apps.yml` and keep the same app settings above.
-7. Add the Static Web Apps deployment token as a GitHub repository secret named:
+6. This repository already includes the Azure-generated workflow at:
 
 ```text
-AZURE_STATIC_WEB_APPS_API_TOKEN
+.github/workflows/azure-static-web-apps-wonderful-beach-042aa080f.yml
 ```
 
-You can get the token in the Azure Portal from the Static Web App resource overview by choosing **Manage deployment token**.
+7. Confirm the workflow uses these settings:
+
+```yaml
+app_location: "/"
+api_location: ""
+output_location: ""
+skip_app_build: true
+```
+
+8. Confirm the Static Web Apps deployment token exists as the GitHub repository secret used by the workflow:
+
+```text
+AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_BEACH_042AA080F
+```
+
+You can get or rotate the token in the Azure Portal from the Static Web App resource overview by choosing **Manage deployment token**.
 
 After the secret is set, a push to `main` deploys the site.
 
